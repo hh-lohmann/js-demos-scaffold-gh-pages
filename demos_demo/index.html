@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Demos: Scaffold for providing quick demos for JavaScript code
+  </title>
+  <link rel="stylesheet" href="./_demos.css">
+  <script type="module" src="./_run.js" defer></script>
+</head>
+<body>
+  <h1>
+    Demos for Scaffold for providing quick demos for JavaScript code
+  </h1>
+  <!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+  <p id="github_readme_demos_switch">
+    See <a href="https://...repo-owner....github.io/...repo-name..." onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='/'; alert('Dev environment detected - switching to local version');}">main page</a> for general information about Scaffold for providing quick demos for JavaScript code
+  </p>
+  <div class="demos_container">
+    <!-- Insert copies of _description-template.html here -->
+    <article class="sourceBrowser">
+      <h2>
+        Demo for type <i>sourceBrowser</i>
+      </h2>
+      <p>
+        Example code that can run directly in the browser => renders buttons "Start Demo" and "See / Download Code" and an output area for the demo 
+      </p>
+      <section class="secondsPassed">
+        <h3>
+          Counter for seconds passed
+        </h3>
+        <p>
+          May express "still active" or "waiting for instruction"
+        </p>
+        <div class="demo">
+          <span class="placeholder">... loading ...</span>
+        </div>
+      </section>
+    </article>
+    <article class="sourceInstalled">
+      <h2>
+        Demo for type <i>sourceInstalled</i>
+      </h2>
+      <p>
+        Example code that requires the full current project (for which the demo is utilized) to be installed => renders an information with a link to the project's homepage and a button to download code to run it with Node / Bun
+      </p>
+      <section class="isBinaryFileSimple">
+        <h3>
+          Read first line of file while rejecting binary files
+        </h3>
+        <p>
+          Test with Hebrew text file
+        </p>
+        <div class="demo">
+          <span class="placeholder">... loading ...</span>
+        </div>
+      </section>
+    </article>
+    <article class="sourceNode">
+      <h2>
+        Demo for type <i>sourceNode</i>
+      </h2>
+      <p>
+        Example code that needs Node / Bun to run => renders link to download code to run it with Node / Bun
+      </p>
+      <section class="secondsPassed">
+        <h3>
+          Counter for seconds passed
+        </h3>
+        <p>
+          May express "still active" or "waiting for instruction"
+        </p>
+        <div class="demo">
+          <span class="placeholder">... loading ...</span>
+        </div>
+      </section>
+    </article>
+  </div>
+  <!-- see https://hh-lohmann.github.io/html-endspacer -->
+  <p id="endspacer" data-version="0.1.0" title="Endspacer - helps to align scrolling and positioning link targets | Scroll up to content or click / touch to jump to page top" align="center"><a href="#top"><img alt="Endspacer: Obviously no support for Data URLs - see https://hh-lohmann.github.io/html-endspacer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII=" height="1000" width="100%"><br>[top]</a></p>
+</body>
+</html>

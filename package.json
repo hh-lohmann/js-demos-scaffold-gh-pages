@@ -1,0 +1,17 @@
+{
+  "name": "js-demos-scaffold-gh-pages",
+  "description": "Scaffold for providing quick demos of JavaScript code to run in Browser and / or with Node / Bun, utilizing GitHub Pages",
+  "keywords": [],
+  "author": {
+    "name": "hh lohmann",
+    "email": "hh.lohmann@gmail.com"
+  },
+  "version": "1.0.5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hh-lohmann/js-demos-scaffold-gh-pages.git"
+  },
+  "bugs": "https://github.com/hh-lohmann/js-demos-scaffold-gh-pages/issues",
+  "homepage": "https://hh-lohmann.github.io/js-demos-scaffold-gh-pages"
+}
