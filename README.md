@@ -64,10 +64,10 @@ Concrete demo example
       ```
 
   2.  Save [the according `00_sourceBrowserCodeTemplate.js`](./demos/00_sourceBrowserCodeTemplate.js) as `demos/counterSecondsPassed.js` and fill it
-      * **"./index-mock.js" here to mimic a "../index.js" in actual usage**
       ```js
       // @ts-check
 
+      // "./index-mock.js" here to mimic a "../index.js" in actual usage
       import { repeatMock } from './index-mock.js';
 
       /** Count from 0 to n for defined duration

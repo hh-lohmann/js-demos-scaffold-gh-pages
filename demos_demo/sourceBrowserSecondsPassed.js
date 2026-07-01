@@ -1,6 +1,10 @@
 // @ts-check
 
-// Use a tool like https://marketplace.visualstudio.com/items?itemName=colder.source-map-visualization in VS Code to verify that minified "index-mock.js" against "index-mock.js.map" as harmless
+// "./index-mock.js" here to mimic a "../index.js" in actual usage
+//  * Use a tool like
+//    https://github.com/cncolder/vscode-source-map-visualization
+//    in VS Code to verify that minified "index-mock.js" against
+//    "index-mock.js.map" as harmless
 import { repeatMock } from './index-mock.js';
 
 /** Count from 0 to n for defined duration
