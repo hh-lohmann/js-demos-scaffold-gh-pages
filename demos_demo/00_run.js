@@ -1,7 +1,7 @@
 // @ts-check
 
 /** type { string } */
-import * as demos from './_list.js';
+import * as demos from './00_load.js';
 
 /** Disable buttons while one demo is running
  *  - I.e. make running demo exclusive
@@ -39,7 +39,7 @@ const createDemo = function(elem,demo){
 const createDemoButtonCode = function(demo){
   const myEl=document.createElement('button');
   myEl.innerText='See / Download Code';
-  myEl.onclick=()=>document.location.href='./_seeDownloadCodeFile.html?file=./'+demo+'.js';
+  myEl.onclick=()=>document.location.href='./00_seeDownloadCodeFile.html?file=./'+demo+'.js';
   return myEl;
 }
 
@@ -111,7 +111,7 @@ const showSourcecode=function(demoCanvas,demoName,demoType){
     }
     if(demoType==='sourceInstalled'){
       myContent.innerHTML=`This code requires <a href="#" onclick="document.querySelector(\'#github_readme_demos_switch>a\').click();">...repo-name...</a> to be installed. `;
-      // !!! TWEAK ONLY FOR DEMO ON https://hh-lohmann.github.io/js-demos-scaffold-gh-pages - see https://hh-lohmann.github.io/js-demos-scaffold-gh-pages/demos/_run.js for untweaked version
+      // !!! TWEAK ONLY FOR DEMO ON https://hh-lohmann.github.io/js-demos-scaffold-gh-pages - see https://hh-lohmann.github.io/js-demos-scaffold-gh-pages/demos/00_run.js for untweaked version
       myContent.innerHTML=`This code requires <a href="https://hh-lohmann.github.io/is-binary-file-simple/">is-binary-file-simple</a> to be installed. `;
       myContent.appendChild(myBtn);
       myContent.appendChild(document.createTextNode(' to an appropriate environment'));

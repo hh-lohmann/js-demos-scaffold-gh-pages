@@ -40,7 +40,7 @@ Concrete demo example
 
 ### Demo code that can run directly in the browser
 
-  1.  Copy the [demo template](./demos/_description-template.html) into the `div.demos_container` in [demos/index.html](./demos/index.html) and fill it
+  1.  Copy the [demo template](./demos/00_description-template.html) into the `div.demos_container` in [demos/index.html](./demos/index.html) and fill it
       ```html
       <article class="counter">
         <h2>
@@ -63,7 +63,7 @@ Concrete demo example
       </article>
       ```
 
-  2.  Save [the according `_sourceBrowser-code-template.js`](./demos/_sourceBrowser-code-template.js) as `demos/counterSecondsPassed.js` and fill it
+  2.  Save [the according `00_sourceBrowserCodeTemplate.js`](./demos/00_sourceBrowserCodeTemplate.js) as `demos/counterSecondsPassed.js` and fill it
       * **"./index-mock.js" here to mimic a "../index.js" in actual usage**
       ```js
       // @ts-check
@@ -99,7 +99,7 @@ Concrete demo example
       }
       ```
 
-  3.  Add `counterSecondsPassed.js` to the according register `demos/_sourceBrowser.js` for example code that can run directly in the browser
+  3.  Add `counterSecondsPassed.js` to the according register `demos/10_sourceBrowserDemos.js` for example code that can run directly in the browser
       ```js
       // @ts-check
 
@@ -159,6 +159,11 @@ Meant for quick demos that do not require specific resources or environments bes
 
 ## Details
 
+  * The prefix `00_` marks scaffold files that should not be changed
+
+  * The prefix `10_` marks scaffold files where demo entries have to be added
+    * Note that `index.html` can not be marked in this way due its technically required name
+
   * Demos are defined by purposes and cases
     * A purpose can have one or more cases
     * A case belongs to exactly one purpose
@@ -176,13 +181,13 @@ Meant for quick demos that do not require specific resources or environments bes
     * "purpose-name" and "Case-name" are to replaced by the respective class names used in index.html
 
   * Demo code files are registered in one of three demo type files to let index.html know how to present them
-    * `sourceBrowser.js`
+    * `10_sourceBrowserDemos.js`
       * To present example code that can run directly in the browser
       * Renders buttons "Start Demo" and "See / Download Code" and an output area for the demo 
-    * `sourceInstalled.js`
+    * `10_sourceInstalledDemos.js`
       * To present example code that requires the full current project (for which the demo is utilized) to be installed
       * Renders an information with a link to the project's homepage and a button to download code to run it with Node / Bun
-    * `sourceNode.js`
+    * `10_sourceNodeDemos.js`
       * To present example code that needs Node / Bun to run
       * Renders link to download code to run it with Node / Bun
 

@@ -1,7 +1,7 @@
 // @ts-check
 
 /** type { string } */
-import * as demos from './_list.js';
+import * as demos from './00_load.js';
 
 /** Disable buttons while one demo is running
  *  - I.e. make running demo exclusive
@@ -39,7 +39,7 @@ const createDemo = function(elem,demo){
 const createDemoButtonCode = function(demo){
   const myEl=document.createElement('button');
   myEl.innerText='See / Download Code';
-  myEl.onclick=()=>document.location.href='./_seeDownloadCodeFile.html?file=./'+demo+'.js';
+  myEl.onclick=()=>document.location.href='./00_seeDownloadCodeFile.html?file=./'+demo+'.js';
   return myEl;
 }
 
@@ -168,7 +168,7 @@ const save_as_file = function( file_name, data, mime_type ) {
   }
   let hidden_a = document.createElement( 'a' )
   hidden_a.download = file_name
-  hidden_a.href = URL.createObjectURL( new Blob( [ data ], { type: mime_type } ) )
+  hidden00_a.href = URL.createObjectURL( new Blob( [ data ], { type: mime_type } ) )
   hidden_a.click()
   return true
 }
