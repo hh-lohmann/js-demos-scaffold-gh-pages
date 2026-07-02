@@ -40,7 +40,7 @@ Concrete demo example
 
 ### Demo code that can run directly in the browser
 
-  1.  Copy the [demo template](./demos/00_description-template.html) into the `div.demos_container` in [demos/index.html](./demos/index.html) and fill it
+  1.  Copy the content of [00_demoTemplate.html](./demos/00_demoTemplate.html) into the `div.demos_container` in [demos/index.html](./demos/index.html) and fill it
       ```html
       <article class="counter">
         <h2>
