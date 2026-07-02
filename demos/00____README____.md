@@ -40,7 +40,7 @@ Concrete demo example
 
 ### Demo code that can run directly in the browser
 
-  1.  Copy the content of `demos/00_demoTemplate.html` into the `div.demos_container` in `demos/index.html` and fill it
+  1.  Copy the content of `00_demoTemplate.html` into the `div.demos_container` in `index.html` and fill it
       ```html
       <article class="counter">
         <h2>
@@ -63,7 +63,7 @@ Concrete demo example
       </article>
       ```
 
-  2.  Save [the according `00_sourceBrowserCodeTemplate.js`](./demos/00_sourceBrowserCodeTemplate.js) as `demos/counterSecondsPassed.js` and fill it
+  2.  Save [the according `00_sourceBrowserCodeTemplate.js`](./00_sourceBrowserCodeTemplate.js) as `demos/counterSecondsPassed.js` and fill it
       ```js
       // @ts-check
 
@@ -124,11 +124,8 @@ Concrete demo example
 
 ## Demo
 
-<!-- see https://hh-lohmann.github.io/github-readme-demos-switch
-      - ! here tweaked as 'demos_demo' -->
-<p id="github_readme_demos_switch">
-  See <a href="https://hh-lohmann.github.io/js-demos-scaffold-gh-pages/demos_demo/" onclick="if(location.hostname.replace(/\d/g,'').replaceAll('.','')===''||location.hostname==='localhost'){this.href='./demos_demo/';alert('Dev environment detected - switching to local version');}">demo for demos</a><span style="display:none;"> on GitHub Pages for this repo</span>
-</p>
+<!-- see https://hh-lohmann.github.io/github-readme-demos-switch -->
+See [demo for demos](https://hh-lohmann.github.io/js-demos-scaffold-gh-pages/demos_demo) on GitHub Pages for this repo
 
 ## Caveats
 
@@ -203,7 +200,7 @@ Meant for quick demos that do not require specific resources or environments bes
 
 ## License
 
-  * MIT (see [LICENSE.txt](LICENSE.txt))
+  * MIT (see [00_LICENSE.txt](00_LICENSE.txt))
 
 
 ## References
