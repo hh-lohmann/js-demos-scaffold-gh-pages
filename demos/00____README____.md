@@ -132,31 +132,6 @@ See [demo for demos](https://hh-lohmann.github.io/js-demos-scaffold-gh-pages/dem
 Meant for quick demos that do not require specific resources or environments besides a current browser and / or a current version of Node / Bun. You may try yourself how far you could stretch it, possibly with some modifications.
 
 
-## Installation
-
-  * Activate GitHub Pages for the repo that should host the demos (if not active yet)
-
-  * Copy the folder `demos` from here to your repo the repo to host the demos
-    * E.g. with the npm package [git-copy-file-folder](#npm-package-git-copy-file-folder):
-      ```js
-        gitCopyFileFolder( 'https://github.com/hh-lohmann/js-demos-scaffold-gh-pages', 'demos' )
-      ```
-
-  * Copy the corresponding [GitHub README demos switch](#hh-lohmann-github-readme-demos-switch) to the "Demo" section in the README of the project the demos are for
-
-  * Replace placeholders over the new 'demos' folder and the extended project's README
-
-    * `...repo-owner...` with the GitHub user / organisation of the repo that hosts the demos
-      * e.g.: `joe-doe`
-
-    * `...repo-name...` with the name of the repo that hosts the demos
-      * e.g.: `my-fantastic-project`
-
-    * `...project-title...` with the title (typically the README's top heading) of the repo that hosts the demos
-      * May be identical to the "description" field in the package.json the repo and / or the project name (see above) or a rephrashing of it
-      * e.g.: `Approach fantastic things without losing time for planning`
-
-
 ## Details
 
   * The prefix `00_` marks scaffold files that should not be changed
