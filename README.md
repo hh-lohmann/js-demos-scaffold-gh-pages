@@ -139,7 +139,7 @@ Meant for quick demos that do not require specific resources or environments bes
   * Copy the folder `demos` from here to your repo the repo to host the demos
     * E.g. with the npm package [git-copy-file-folder](#npm-package-git-copy-file-folder):
       ```js
-        gitCopyFileFolder( 'https://hh-lohmann.github.io/js-demos-scaffold-gh-pages', 'demos' )
+        gitCopyFileFolder( 'https://github.com/hh-lohmann/js-demos-scaffold-gh-pages', 'demos' )
       ```
 
   * Copy the corresponding [GitHub README demos switch](#hh-lohmann-github-readme-demos-switch) to the "Demo" section in the README of the project the demos are for
